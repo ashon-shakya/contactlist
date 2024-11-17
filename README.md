@@ -30,5 +30,5 @@ This project demonstrates a mobile-like UI with a **slide-to-unlock feature**. A
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/ashon-shakya/contact-list.git
+   git clone https://github.com/ashon-shakya/contactlist.git
    ```
