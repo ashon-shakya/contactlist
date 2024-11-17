@@ -4,7 +4,7 @@ const apiEP = "https://randomuser.me/api?results=10";
 const slider = document.getElementById("mySlider");
 
 slider.addEventListener("change", (event) => {
-  const { value } = event.target;
+  let { value } = event.target;
 
   if (value > 70) {
     displayScreen("appScreen");
@@ -109,6 +109,11 @@ const displayContactList = (list) => {
 
   const userCount = document.getElementById("userCount");
   userCount.innerText = list.length;
+};
+
+const displayLockScreen = () => {
+  displayScreen("lockScreen");
+  slider.value = 0;
 };
 
 const searchElement = document.getElementById("search");
