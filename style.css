@@ -27,7 +27,11 @@ a {
 .notification {
   height: 50px;
   padding: 10px;
-  background-color: #ffffff3a;
+  background-color: #373737c9;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 #lockScreen {
