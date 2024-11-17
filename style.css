@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  background: url(bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.phone {
+  height: 600px;
+  width: 300px;
+  background: url(mbg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.phone::-webkit-scrollbar {
+  display: none;
+}
+
+.notification {
+  height: 50px;
+  padding: 10px;
+  background-color: #ffffff3a;
+}
+
+#lockScreen {
+  display: block;
+}
+
+#appScreen {
+  display: none;
+}
+
+#contactListScreen {
+  display: none;
+}
+
+.slider-label {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  animation: slideAnimation 1s ease-in-out infinite;
+}
+
+@keyframes slideAnimation {
+  0%,
+  100% {
+    color: #000;
+    filter: drop-shadow(0 0 20px teal);
+  }
+
+  50% {
+    color: teal;
+    filter: drop-shadow(0 0 20px teal);
+  }
+}
+
+.slider-container {
+  top: 400px;
+}
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background: radial-gradient(rgb(177, 248, 10), rgb(67, 236, 16));
+}
+
+.header i {
+  right: 10px;
+}
+
+.appScreen i {
+  cursor: pointer;
+}
